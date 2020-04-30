@@ -19,7 +19,7 @@ function popup(image, name, discription, gallaryLink, purchase) {
                     <div class="info">
                       <img src="${image}" style="height:250px; width:250px;"/> <br>
                       <span class="header">${name}</span> <br>
-                      <p>${discription}</p> <br>
+                      <p class='discription'>${discription}</p> <br>
                       <a href="${gallaryLink}" class="popupButton">Gallary Link</a>
                       <a href="${purchase}" class="popupButton">Purchase</a> <br> <br> <br>
                       <a class="popupButton" id="closeTest" onclick='popupBox.style = "display:none;"; document.getElementById("cover").style="display:none";'>Close</a>
