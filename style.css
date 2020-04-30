@@ -1,0 +1,253 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+h1 {
+  font-family: "Roboto", Arial, sans-serif;
+  /* text-align: center; */
+  margin-left: 110px;
+}
+
+.ulStyling{
+  text-align: center;
+  list-style: none;
+  width:310px;
+}
+
+
+.ulStyling li img {
+  width: 75%;
+  height:75%;
+  /* filter:saturate(40%) brightness(70%); */
+  -webkit-transition: filter 150ms linear;
+  -moz-transition: filter 150ms linear;
+  -o-transition: filter 150ms linear;
+  -ms-transition: filter 150ms linear;
+  transition: filter 150ms linear;
+}
+
+.ulStyling li img:hover {
+  filter:saturate(40%) brightness(70%);
+}
+
+#input {
+  margin-left: 3%;
+  /* font-family: Roboto, Arial; */
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color:black;
+}
+
+/* #input a:hover {
+  color:blue;
+} */
+
+.clocks {
+  display: inline-block;
+  padding-right:42px;
+}
+
+.clocks:hover {
+  background-color: #ededed;
+}
+
+.header {
+  font-size: 40px;
+}
+
+.gallaryButton {
+  border-radius: 3px;
+
+  font-size:18px;
+  margin-top: 3px;
+  padding: 15px;
+  background-color: #9f3100;
+  /* width:100px; */
+  border: 1px solid black;
+
+  -webkit-transition: background-color 250ms linear;
+  -moz-transition: background-color 250ms linear;
+  -o-transition: background-color 250ms linear;
+  -ms-transition: background-color 250ms linear;
+  transition: background-color 250ms linear;
+}
+
+.purchaseButton {
+  border-radius: 3px;
+
+  font-size:18px;
+  padding: 15px;
+  margin-top:3px;
+  background-color: #9f9a00;
+  /* width:100px; */
+  border: 1px solid black;
+
+  -webkit-transition: background-color 250ms linear;
+  -moz-transition: background-color 250ms linear;
+  -o-transition: background-color 250ms linear;
+  -ms-transition: background-color 250ms linear;
+  transition: background-color 250ms linear;
+}
+
+.purchaseButton:hover {
+  background-color: #9fba00;
+}
+
+.gallaryButton:hover {
+  background-color: #9f6500;
+}
+
+.popupButton {
+  border-radius: 3px;
+
+  font-size:18px;
+  margin-top: 3px;
+  padding: 15px 100px;
+  background-color: #9f6500;
+  /* width:250px; */
+  /* width:100px; */
+  border: 1px solid black;
+
+  -webkit-transition: background-color 250ms linear;
+  -moz-transition: background-color 250ms linear;
+  -o-transition: background-color 250ms linear;
+  -ms-transition: background-color 250ms linear;
+  transition: background-color 250ms linear;
+}
+
+.popupButton:hover {
+  background-color: #9f9400;
+}
+
+.gray {
+  color:gray
+}
+
+/* * {
+  border: 1px solid black;
+} */
+
+#popup {
+  padding-top: 10px;
+  box-shadow: -8px 8px 10px 3px rgba(0,0,0,0.2);
+  font-family: 'Roboto', Arial, sans-serif;
+  position: fixed;
+  margin:1% 25%;
+  border:1px solid black;
+  width:50%;
+  height:90%;
+  background-color: white;
+  opacity:1;
+  z-index: 2;
+
+  text-align: center;
+  display: none;
+}
+
+
+.info {
+  width:600px;
+  margin: auto auto;
+}
+
+.fix {
+  margin-top: 10px;
+}
+
+#cover{
+  position:fixed;
+  top:0;
+  left:0;
+  background:rgba(0,0,0,0.6);
+  z-index:1;
+  width:100%;
+  height:100%;
+  display:none;
+}
+
+
+/* side bar slide in CSS */
+
+/* The side navigation menu */
+.sidenav {
+  font-family: "Roboto", arial, sans-serif;
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: white; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.side {
+  border-bottom: 1px solid black;
+}
+
+.sideTop {
+  border-top:1px solid black;
+  border-bottom:1px solid black;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: lightblue;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#connect a {
+  display: inline-block;
+}
+
+#connect {
+  top: 85%;
+  position: absolute;
+}
+
+main {
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+#aboutmain {
+  margin-left:100px;
+}
+
+.discription {
+  height:100px;
+}
+
+.price {
+  padding: 10px 0 10px 0;
+  font-size:18px;
+}

@@ -1,0 +1,165 @@
+// data = [
+//   {
+//     "clockName": "Activity Rings",
+//     "dateReleased": "02/12/2020",
+//     "discription": "This is a simple clock which displays three different rings \
+//                     which are your steps, calories, and active minutes",
+//     "extendedDis": "This clock has three stats: calories, steps, and \
+//                     active minutes. It uses the three rings plus the percentage to show how \
+//                     much of each stat you have completed that day. It also has heart rate and battery power",
+//     "extendedDis2": "Activity Rings is free to download though! You can get it now, \
+//                     and you will have it forever! You will never have to pay for this watch. \
+//                     If you are willing to pay an extra two bucks, you can get a better version of it called All Stat Rings.",
+//     "picture": "https://gallery-assets.fitbit.com/public/NM0kDYJoNnRnO2CXAL4XCI7hC58_BXotBYBsAI3oCY4ZNI.oC2KaD./B2KXBq7oC5NhBnGYCHooO2VtAL7qBINhCYFmO5NkNYNoBYSX@1x.png",
+//     "rating": 44,
+//     "pathToClock": "https://gallery.fitbit.com/details/b1a575d9-9629-4b64-a14e-95a68a801ff9",
+//     "purchaseLink": "javascript:void(0)",
+//     "price": 1.99,
+//     "trialLength": 0,
+//     "free": true
+//   },
+// ]
+
+data = [
+  {
+      "name": "All Stats Rings",
+      "id": 8683,
+      "price": "1.99",
+      "description": "This clock has all your stats and they can be accessed by clicking the middle of the clock and the two buttons at the top",
+      "appstoreUrl": "https:\/\/gallery.fitbit.com\/details\/08acd3f5-049f-482c-9ac8-afa7b6a5ff9f",
+      "image": "https:\/\/s3.amazonaws.com\/kiezelpay\/app_images\/FC5C5D2A-CB2A-4839-2431-84E4D809196F\/1583635729649.png",
+      "shop": "https:\/\/kiezelpay.com\/code\/?s=5D20BB4E-65B5-012C-5D4F-1277E17C336A&dsu=844190&p=8683",
+      "isBundle": false,
+      "bundles": [
+          8684
+      ]
+  },
+  {
+      "name": "Analog Stat ",
+      "id": 8319,
+      "price": "1.99",
+      "description": "This is a sleek, fancy, analog clock with digital on top. It shows your active time, calories, steps and heart rate all at the same time.",
+      "appstoreUrl": "https:\/\/gallery.fitbit.com\/details\/c3abee35-a773-43a0-ac9a-64e0efdc8b79",
+      "image": "https:\/\/s3.amazonaws.com\/kiezelpay\/app_images\/6A42645C-45C5-065C-FF59-503CD79FF0E4\/1588282290940.png",
+      "shop": "https:\/\/kiezelpay.com\/code\/?s=5D20BB4E-65B5-012C-5D4F-1277E17C336A&dsu=844190&p=8319",
+      "isBundle": false,
+      "bundles": [
+          8497,
+          8684
+      ]
+  },
+  {
+      "name": "Basic Digital Stat",
+      "id": 8735,
+      "price": "1.25",
+      "description": "This is a super basic digital clock with heart rate, steps, and calories.",
+      "appstoreUrl": "https:\/\/gallery.fitbit.com\/details\/2add46b0-dd3b-4600-8a18-6afc4007b13f",
+      "image": "https:\/\/s3.amazonaws.com\/kiezelpay\/app_images\/9F8B3AE9-B084-F7F2-E6AD-E813406FE70D\/1583720376944.png",
+      "shop": "https:\/\/kiezelpay.com\/code\/?s=5D20BB4E-65B5-012C-5D4F-1277E17C336A&dsu=844190&p=8735",
+      "isBundle": false,
+      "bundles": []
+  },
+  {
+      "name": "Curvy Multi Ring",
+      "id": 8331,
+      "price": "1.99",
+      "description": "This is a better, cleaner version of the multi-ring clock. It too contains four different rings which show steps, floors, calories, and active time. It also includes an analog clock, digital time, battery life, , heart rate, and a dateline which updates according to what time it is in the day.",
+      "appstoreUrl": "https:\/\/gallery.fitbit.com\/details\/30e9b5b1-bdb0-479e-bf0f-cf422c994da5",
+      "image": "https:\/\/s3.amazonaws.com\/kiezelpay\/app_images\/71DCC820-12E1-5A84-95C7-7C492DBB1CD1\/1584554694371.png",
+      "shop": "https:\/\/kiezelpay.com\/code\/?s=5D20BB4E-65B5-012C-5D4F-1277E17C336A&dsu=844190&p=8331",
+      "isBundle": false,
+      "bundles": [
+          8497,
+          8684
+      ]
+  },
+  {
+      "name": "Digital Ring",
+      "id": 9849,
+      "price": "1.99",
+      "description": "This awesome clockface has like, 4 things on its face! How could you ever pass that up?? I know I could.",
+      "appstoreUrl": "https:\/\/gallery.fitbit.com\/details\/7f111e4f-ff2a-4075-a269-852ada61b01e",
+      "image": "https:\/\/s3.amazonaws.com\/kiezelpay\/app_images\/E8407A7E-A5D3-17C0-2A26-02193C722043\/1586708871248.png",
+      "shop": "https:\/\/kiezelpay.com\/code\/?s=5D20BB4E-65B5-012C-5D4F-1277E17C336A&dsu=844190&p=9849",
+      "isBundle": false,
+      "bundles": [
+          8684
+      ]
+  },
+  {
+      "name": "Fancy Stat",
+      "id": 8491,
+      "price": "1.99",
+      "description": "A beautiful analog clock that includes the stats if you click on the middle of the clock face.\n\nIncludes heartrate, steps, distance, active time, and calories.",
+      "appstoreUrl": "https:\/\/gallery.fitbit.com\/details\/d638240e-92f7-4d88-9af1-6e4f4e452b42",
+      "image": "https:\/\/s3.amazonaws.com\/kiezelpay\/app_images\/E8A2F22B-F062-54B9-5025-2023F490C422\/1583350927812.png",
+      "shop": "https:\/\/kiezelpay.com\/code\/?s=5D20BB4E-65B5-012C-5D4F-1277E17C336A&dsu=844190&p=8491",
+      "isBundle": false,
+      "bundles": [
+          8497,
+          8684
+      ]
+  },
+  {
+      "name": "Levels",
+      "id": 9142,
+      "price": "1.99",
+      "description": "This has five different upright bars for all your stats. It also includes the date, battery power, digital time, and heartrate at the top of the screen.",
+      "appstoreUrl": "https:\/\/gallery.fitbit.com\/details\/ac6ca742-a419-4409-aaf3-66570c54e0f9",
+      "image": "https:\/\/s3.amazonaws.com\/kiezelpay\/app_images\/71DCC820-12E1-5A84-95C7-7C492DBB1CD1\/1584554583278.png",
+      "shop": "https:\/\/kiezelpay.com\/code\/?s=5D20BB4E-65B5-012C-5D4F-1277E17C336A&dsu=844190&p=9142",
+      "isBundle": false,
+      "bundles": []
+  },
+  {
+      "name": "Line Stat",
+      "id": 8326,
+      "price": "1.99",
+      "description": "This product has 6 different colored rectangles, one for each different stat. It also has the date and time in digital format.",
+      "appstoreUrl": "https:\/\/gallery.fitbit.com\/details\/ae2afd5c-97eb-4387-90fb-5881218777b8",
+      "image": "https:\/\/s3.amazonaws.com\/kiezelpay\/app_images\/2338E28B-D913-6BB6-1B9C-99685B2B7BF6\/1583096915401.png",
+      "shop": "https:\/\/kiezelpay.com\/code\/?s=5D20BB4E-65B5-012C-5D4F-1277E17C336A&dsu=844190&p=8326",
+      "isBundle": false,
+      "bundles": [
+          8497
+      ]
+  },
+  {
+      "name": "Multi Ring",
+      "id": 8323,
+      "price": "1.99",
+      "description": "This clock face shows your steps, floors, calories burned, and active time! And it also shows heart rate, digital time, analog clock, and battery power for just $1.99!",
+      "appstoreUrl": "https:\/\/gallery.fitbit.com\/details\/b7bf69f2-ca6d-421b-abf0-b40d5d0d7d68",
+      "image": "https:\/\/s3.amazonaws.com\/kiezelpay\/app_images\/31A4782D-0A54-CE86-7F0D-FE21C88D0655\/1583094797027.png",
+      "shop": "https:\/\/kiezelpay.com\/code\/?s=5D20BB4E-65B5-012C-5D4F-1277E17C336A&dsu=844190&p=8323",
+      "isBundle": false,
+      "bundles": [
+          8497,
+          8684
+      ]
+  },
+  {
+      "name": "Sleek Stats",
+      "id": 8941,
+      "price": "1.99",
+      "description": "A sleek, simple clock with all your stats on the front of the clock",
+      "appstoreUrl": "https:\/\/gallery.fitbit.com\/details\/3b5a32d8-cfc4-4580-8b6d-547690f6b6b5",
+      "image": "https:\/\/s3.amazonaws.com\/kiezelpay\/app_images\/8885C149-3BDA-765D-3A5A-E2DF3D4BDA2E\/1584146365165.png",
+      "shop": "https:\/\/kiezelpay.com\/code\/?s=5D20BB4E-65B5-012C-5D4F-1277E17C336A&dsu=844190&p=8941",
+      "isBundle": false,
+      "bundles": []
+  },
+  {
+      "name": "Woah! Arcfull!",
+      "id": 9848,
+      "price": "1.99",
+      "description": "This is a product that has many, many arcs. All of which display your stats and are all super awesome.",
+      "appstoreUrl": "https:\/\/gallery.fitbit.com\/details\/ec207f90-5f04-43eb-9e49-362efede0475",
+      "image": "https:\/\/s3.amazonaws.com\/kiezelpay\/app_images\/E8407A7E-A5D3-17C0-2A26-02193C722043\/1586708637936.png",
+      "shop": "https:\/\/kiezelpay.com\/code\/?s=5D20BB4E-65B5-012C-5D4F-1277E17C336A&dsu=844190&p=9848",
+      "isBundle": false,
+      "bundles": [
+          8684
+      ]
+  }
+]
