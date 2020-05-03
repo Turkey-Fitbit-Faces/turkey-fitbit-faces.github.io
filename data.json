@@ -161,5 +161,16 @@ data = [
       "bundles": [
           8684
       ]
-  }
+  },
+  {
+    "name": "Activity Rings",
+    "id": 0,
+    "price": "0.00",
+    "description": "This is a basic app which has three activity rings which contain your calories, activeminute, and steps. This app is free! Download from the gallery.",
+    "appstoreUrl": "https://gallery.fitbit.com/details/b1a575d9-9629-4b64-a14e-95a68a801ff9",
+    "image": "https://gallery-assets.fitbit.com/public/NM0kDYJoNnRnO2CXAL4XCI7hC58_BXotBYBsAI3oCY4ZNI.oC2KaD./B2KXBq7oC5NhBnGYCHooO2VtAL7qBINhCYFmO5NkNYNoBYSX@1x.png",
+    "shop": "https://kiezelpay.com/code/?s=5D20BB4E-65B5-012C-5D4F-1277E17C336A&dsu=844190",
+    "isBundle": false,
+    "bundles": []
+}
 ]
