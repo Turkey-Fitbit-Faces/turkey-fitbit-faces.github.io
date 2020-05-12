@@ -20,7 +20,7 @@ function popup(image, name, discription, gallaryLink, purchase) {
                       <img src="${image}" style="height:250px; width:250px;"/> <br>
                       <span class="header">${name}</span> <br>
                       <p class='discription'>${discription}</p> <br>
-                      <a href="${gallaryLink}" class="popupButton">Gallary Link</a>
+                      <a href="${gallaryLink}" class="popupButton">Gallery Link</a>
                       <a href="${purchase}" class="popupButton">Purchase</a> <br> <br> <br>
                       <a class="popupButton" id="closeTest" onclick='popupBox.style = "display:none;"; document.getElementById("cover").style="display:none";'>Close</a>
                     </div>
@@ -60,7 +60,7 @@ for (let i = 0; i < data.length; i++) {
                           <li class="gray price">Price: ${data[i].price} USD</li>
                           <!--<li class="gray">Trial Length: ${data[i].trialLength}</li>-->
                           </div>
-                          <a href="${data[i].appstoreUrl}"><li class="gallaryButton fix">Gallary Link</li></a>
+                          <a href="${data[i].fitbitAppstoreUrl}"><li class="gallaryButton fix">Gallery Link</li></a>
                           <a href="${data[i].shop}"><li class="purchaseButton">Purchase</li></a>
                         </ul>
                       </div>
