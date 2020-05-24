@@ -100,4 +100,4 @@ function closeNav() {
 
 fetch('https://api.kiezelpay.com/api/merchant/productList?key=e926a0a52544531e487b4166f760fa56')
   .then(response => response.json())
-  .then(data => data = data.products);
+  .then(dat => data = dat.products);
