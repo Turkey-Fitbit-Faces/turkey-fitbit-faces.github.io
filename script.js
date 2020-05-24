@@ -1,6 +1,7 @@
 var input = document.getElementById("input")
 var popupBox = document.getElementById("popup")
 
+let data = [];
 
 function close() {
   popupBox.style = "display:none;"
