@@ -43,7 +43,7 @@ function popup(image, name, discription, gallaryLink, purchase) {
 
 
 for (let i = 0; i < data.length; i++) {
-  console.log(data2[i])
+  console.log(data[i])
   // if(data[i].free === false) {
     input.innerHTML += `
                       <div class="clocks">
