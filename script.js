@@ -42,7 +42,7 @@ function popup(image, name, discription, gallaryLink, purchase) {
   
 }
 
-
+function test() {
 for (let i = 0; i < data.length; i++) {
   console.log(data[i])
   // if(data[i].free === false) {
@@ -86,6 +86,7 @@ for (let i = 0; i < data.length; i++) {
   // }
   
 }
+}
 
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
@@ -100,4 +101,4 @@ function closeNav() {
 
 fetch('https://api.kiezelpay.com/api/merchant/productList?key=e926a0a52544531e487b4166f760fa56')
   .then(response => response.json())
-  .then(dat => data = dat.products);
+  .then(dat => { data = dat.products; test()});
