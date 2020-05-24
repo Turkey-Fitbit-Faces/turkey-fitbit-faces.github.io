@@ -2,8 +2,6 @@ var input = document.getElementById("input")
 var popupBox = document.getElementById("popup")
 
 
-
-
 function close() {
   popupBox.style = "display:none;"
   document.getElementById("cover").style="display:none"
@@ -45,7 +43,7 @@ function popup(image, name, discription, gallaryLink, purchase) {
 
 
 for (let i = 0; i < data.length; i++) {
-  console.log(data[i])
+  console.log(data2[i])
   // if(data[i].free === false) {
     input.innerHTML += `
                       <div class="clocks">
@@ -98,3 +96,7 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.body.style.backgroundColor = "white";
 }
+
+fetch('https://api.kiezelpay.com/api/merchant/productList?key=e926a0a52544531e487b4166f760fa56')
+  .then(response => response.json())
+  .then(data => data = data.products);
