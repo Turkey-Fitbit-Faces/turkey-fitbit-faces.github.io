@@ -47,23 +47,20 @@ for (let i = 0; i < data.length; i++) {
   console.log(data[i])
   // if(data[i].free === false) {
     input.innerHTML += `
-                      <div class="clocks">
-                        <ul class="ulStyling">
-                          <div onclick='popup("${data[i].image}", "${data[i].name}", "${data[i].description}", "${data[i].appstoreUrl}", "${data[i].shop}");'>
+                    <div class="text">
+                      <div class="clocks" onclick='popup("${data[i].image}", "${data[i].name}", "${data[i].description}", "${data[i].appstoreUrl}", "${data[i].shop}");'>
+                          <div>
 
-                          <li><img class="hideThese" src="${data[i].image}"/>
-                          <li class="header">${data[i].name}</li>
-                          <!--<li class="gray discription">${data[i].description}</li>
-                          <li class="gray">Date Released: ${data[i].dateReleased}</li>
-                          <li class="gray">Ratings: ${data[i].rating}</li>-->
-                          <li class="gray price">Price: ${data[i].price} USD</li>
-                          <!--<li class="gray">Trial Length: ${data[i].trialLength}</li>-->
+                          <div><img class="hideThese" src="${data[i].image}"/></div>
+                          <div class="header">${data[i].name}</div>
+                          <div class="gray price">Price: ${data[i].price} USD</div>
+                          
                           </div>
-                          <a href="${data[i].fitbitAppstoreUrl}"><li class="gallaryButton fix">Gallery Link</li></a>
-                          <a href="${data[i].shop}"><li class="purchaseButton">Purchase</li></a>
-                        </ul>
                       </div>
-                    `
+                      <div class="gallaryButton button"><a href="${data[i].fitbitAppstoreUrl}">Gallery Link</a></div>
+                      <div class="purchaseButton button"><a href="${data[i].shop}">Purchase</a></div>
+                    </div>
+                      `
   // }
   // else{
   //   input.innerHTML += `
