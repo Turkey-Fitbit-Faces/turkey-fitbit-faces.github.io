@@ -19,9 +19,9 @@ function popup(image, name, discription, gallaryLink, purchase) {
                       <img src="${image}" style="height:250px; width:250px;"/> <br>
                       <span class="header">${name}</span> <br>
                       <p class='discription'>${discription}</p> <br>
-                      <a href="${gallaryLink}" class="popupButton">Gallery Link</a>
-                      <a href="${purchase}" class="popupButton">Purchase</a> <br> <br> <br>
-                      <a class="popupButton" id="closeTest" onclick='popupBox.style = "display:none;"; document.getElementById("cover").style="display:none";'>Close</a>
+                      <a href="${gallaryLink}" class="popupButton button">Gallery Link</a>
+                      <a href="${purchase}" class="popupButton button">Purchase</a> 
+                      <a class="popupButton button" id="closeTest" onclick='popupBox.style = "display:none;"; document.getElementById("cover").style="display:none";'>Close</a>
                     </div>
                     `
   // }
@@ -57,8 +57,8 @@ for (let i = 0; i < data.length; i++) {
                           
                           </div>
                       </div>
-                      <div class="gallaryButton button"><a href="${data[i].fitbitAppstoreUrl}">Gallery Link</a></div>
-                      <div class="purchaseButton button"><a href="${data[i].shop}">Purchase</a></div>
+                      <div class="gallaryButton button" onclick="window.location.href='${data[i].fitbitAppstoreUrl}'"><a href="${data[i].fitbitAppstoreUrl}">Gallery Link</a></div>
+                      <div class="purchaseButton button" onclick="window.location.href='${data[i].shop}'"><a href="${data[i].shop}">Purchase</a></div>
                     </div>
                       `
   // }
