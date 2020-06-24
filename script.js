@@ -1,7 +1,11 @@
 var input = document.getElementById("input")
+var bundle = document.getElementById("bundles")
 var popupBox = document.getElementById("popup")
 
 let data = [];
+let data2 = [];
+
+let allImages = [];
 
 function close() {
   popupBox.style = "display:none;"
@@ -85,6 +89,39 @@ for (let i = 0; i < data.length; i++) {
 }
 }
 
+function test2() {
+  for (let i = 0; i < data2.length; i++) {
+    console.log(data2[i])
+    // if(data2[i].free === false) {
+      bundle.innerHTML += `
+                      <div class="text">
+                        <div class="clocks" onclick='popup("${data2[i].image}", "${data2[i].name}", "${data2[i].description}", "${data2[i].appstoreUrl}", "${data2[i].shop}");'>
+                            <div>
+                            <div class="center">
+                            <div class="images">
+                              <img class="hideThese" src="clockscreenshots/picture1.png"/>
+                              <img class="hideThese" src="clockscreenshots/picture2.png"/>
+                              <img class="hideThese" src="clockscreenshots/picture3.png"/>
+                              <img class="hideThese" src="clockscreenshots/picture4.png"/>
+                              <img class="hideThese" src="clockscreenshots/picture5.png"/>
+                              <img class="hideThese" src="clockscreenshots/picture6.png"/>
+                              <img class="hideThese" src="clockscreenshots/picture7.png"/>
+                              <img class="hideThese" src="clockscreenshots/picture8.png"/>
+                              <span class="filler">9+</span>
+                            </div>
+                            </div>
+                            <div class="header">${data2[i].name}</div>
+                            <div class="gray price">Price: ${data2[i].price} USD</div>
+                            
+                            </div>
+                        </div>
+                        <div class="gallaryButton button" onclick="window.location.href='${data2[i].overview}'"><a href="${data2[i].overview}">Items Included</a></div>
+                        <div class="purchaseButton button" onclick="window.location.href='${data2[i].shop}'"><a href="${data2[i].shop}">Purchase</a></div>
+                      </div>
+                        `
+  }
+}
+
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
   document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
@@ -98,4 +135,13 @@ function closeNav() {
 
 fetch('https://api.kiezelpay.com/api/merchant/productList?key=e926a0a52544531e487b4166f760fa56')
   .then(response => response.json())
-  .then(dat => { data = dat.products; test()});
+  .then(dat => { 
+    data = dat.products; 
+    data2 = dat.bundles; 
+    dat.products.filter(x => {id=x.id; image=x.image; allImages.push({id, image})})
+    // var id = dat.products[0].id
+    // var image = dat.products[0].image
+    // allImages.push({id, image}) 
+    test(); 
+    test2();
+  });
