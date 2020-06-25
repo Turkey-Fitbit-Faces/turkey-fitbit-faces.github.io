@@ -57,6 +57,7 @@ a {
   height:calc(445px/2);
   width:50%;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .images img {
