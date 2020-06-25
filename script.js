@@ -52,18 +52,19 @@ function test() {
     // if(data[i].free === false) {
     input.innerHTML += `
                     <div class="text">
-                      <div class="clocks" onclick='popup("${data[i].image}", "${data[i].name}", "${data[i].description}", "${data[i].appstoreUrl}", "${data[i].shop}");'>
-                          <div>
+                    <div class="clocks">
+                    <!--<div class="clocks" onclick='popup("${data[i].image}", "${data[i].name}", "${data[i].description}", "${data[i].appstoreUrl}", "${data[i].shop}");'>
+                    --><div>
 
-                          <div><img class="hideThese" src="${data[i].image}"/></div>
-                          <div class="header">${data[i].name}</div>
+                          <div><a href="${data[i].fitbitAppstoreUrl}"><img class="hideThese" src="${data[i].image}"/></a></div>
+                          <div class="header"><a href="${data[i].fitbitAppstoreUrl}">${data[i].name}</a></div>
                           <div class="gray price">Price: ${data[i].price} USD</div>
-                          
+                          <a href="${data[i].shop}">Purchase</a>
                           </div>
                       </div>
-                      <div class="gallaryButton button" onclick="window.location.href='${data[i].fitbitAppstoreUrl}'"><a href="${data[i].fitbitAppstoreUrl}">Gallery Link</a></div>
+                      <!--<div class="gallaryButton button" onclick="window.location.href='${data[i].fitbitAppstoreUrl}'"><a href="${data[i].fitbitAppstoreUrl}">Gallery Link</a></div>
                       <div class="purchaseButton button" onclick="window.location.href='${data[i].shop}'"><a href="${data[i].shop}">Purchase</a></div>
-                    </div>
+                    --></div>
                       `
     // }
     // else{
@@ -112,19 +113,19 @@ function test2() {
                       <div class="text">
                       <div class="clocks">
                       <!--<div class="clocks" onclick='popup("${data2[i].image}", "${data2[i].name}", "${data2[i].description}", "${data2[i].appstoreUrl}", "${data2[i].shop}");'>-->
-                            <div>
-                            <div class="center">
+                            <div class="center"><a href="${data2[i].overview}">
                             <div class="images" id="images${i}">
-                            </div>
-                            </div>
-                            <div class="header">${data2[i].name}</div>
-                            <div class="gray price">Price: ${data2[i].price} USD</div>
                             
+                            </div></a>
+                            <div class="data">
+                            <div class="header"><a href="${data2[i].overview}">${data2[i].name}</a></div>
+                            <div class="gray price">Price: ${data2[i].price} USD</div>
+                            <a href="${data2[i].shop}">Purchase</a>
                             </div>
                         </div>
-                        <div class="gallaryButton button" onclick="window.location.href='${data2[i].overview}'"><a href="${data2[i].overview}">Items Included</a></div>
+                        <!--<div class="gallaryButton button" onclick="window.location.href='${data2[i].overview}'"><a href="${data2[i].overview}">Items Included</a></div>
                         <div class="purchaseButton button" onclick="window.location.href='${data2[i].shop}'"><a href="${data2[i].shop}">Purchase</a></div>
-                      </div>
+                      --></div>
                         `
 
     var imagesDiv = document.getElementById("images" + i);
@@ -150,7 +151,7 @@ function openNav() {
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
-  document.body.style.backgroundColor = "white";
+  document.body.style.backgroundColor = "rgb(213, 226, 226)";
 }
 
 fetch('https://api.kiezelpay.com/api/merchant/productList?key=e926a0a52544531e487b4166f760fa56')

@@ -2,24 +2,122 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
+.clocks:hover {
+  background-color: lightgray;
+}
 
-h1 {
+.clocks {
+  padding:3px;
+  width:75%;
+  transition: background 500ms;
+}
+
+a {
+  text-decoration: none;
+  color:black;
+  transition: color 500ms;
+}
+
+a:hover {
+  color:lightseagreen;
+}
+
+body {
+  background-color: rgb(213, 226, 226);
+}
+
+#input {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+.hideThese {
+  height:100px;
+  border-radius: 10px;
+}
+
+.clocks div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.clocks {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+}
+
+* {
   font-family: "Roboto", Arial, sans-serif;
-  /* text-align: center; */
-  margin-left: 110px;
+  margin: 0;
 }
 
 img {
-  width: 75%;
-  /* height:75%; */
-  border-radius: 10px;
-  /* filter:saturate(40%) brightness(70%); */
-  -webkit-transition: filter 150ms linear;
-  -moz-transition: filter 150ms linear;
-  -o-transition: filter 150ms linear;
-  -ms-transition: filter 150ms linear;
   transition: filter 150ms linear;
 }
+
+img:hover {
+  filter:saturate(40%) brightness(70%);
+}
+
+.filler {
+  background-color: lightcyan;
+  height:100%;
+  width:100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:gray;
+  font-size: 18px;
+}
+
+
+.images {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  grid-gap:10px;
+
+  /* border:1px solid lightslategrey;
+  padding:5px;
+  border-radius: 10px; */
+}
+
+#bundles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+.data {
+  margin-top: 20px;
+}
+
+h1 {
+  font-family: "Roboto", Arial, sans-serif;
+  text-align: center;
+  padding:20px;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 
+h1 {
+  font-family: "Roboto", Arial, sans-serif;
+  text-align: center;
+  margin-left: 110px;
+}
+
+
 
 img:hover {
   filter:saturate(40%) brightness(70%);
@@ -37,14 +135,10 @@ a {
   color:black;
 }
 
-/* #input a:hover {
-  color:blue;
-} */
 
 .clocks {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   text-align: center;
   align-items: center;
   padding-bottom: 20px;
@@ -60,9 +154,6 @@ a {
   grid-template-rows: 1fr 1fr 1fr;
 }
 
-.images img {
-  /* width:10%; */
-}
 
 .center {
   display: flex;
@@ -136,10 +227,6 @@ a {
   color:gray
 }
 
-/* * {
-  border: 1px solid black;
-} */
-
 #popup {
   padding-top: 10px;
   box-shadow: -8px 8px 10px 3px rgba(0,0,0,0.2);
@@ -187,7 +274,7 @@ a {
   width:100%;
   height:100%;
   display:none;
-}
+} */
 
 
 /* side bar slide in CSS */
