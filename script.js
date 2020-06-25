@@ -110,7 +110,8 @@ function test2() {
     // if(data2[i].free === false) {
     bundle.innerHTML += `
                       <div class="text">
-                        <div class="clocks" onclick='popup("${data2[i].image}", "${data2[i].name}", "${data2[i].description}", "${data2[i].appstoreUrl}", "${data2[i].shop}");'>
+                      <div class="clocks">
+                      <!--<div class="clocks" onclick='popup("${data2[i].image}", "${data2[i].name}", "${data2[i].description}", "${data2[i].appstoreUrl}", "${data2[i].shop}");'>-->
                             <div>
                             <div class="center">
                             <div class="images" id="images${i}">
