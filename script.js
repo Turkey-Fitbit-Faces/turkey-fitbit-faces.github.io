@@ -130,12 +130,22 @@ function test2() {
 
     var imagesDiv = document.getElementById("images" + i);
     
+    if(emagines.length < 9) {
+      while(emagines.length < 9) {
+        emagines.push("convert")
+      }
+    }
+
     for(var j = 0; j < emagines.length; j++) {
-      if(emagines.length >= 8 && j >= 8) {
+      if(emagines.length === 9) {
+        if(emagines[j] === "convert") {
+          imagesDiv.innerHTML += `<span class="filler">(Empty)</span>`;
+        }else{
+          imagesDiv.innerHTML += `<img class="hideThese" src="${emagines[j]}">`;
+        }
+      }else if(emagines.length >= 8 && j >= 8) {
         imagesDiv.innerHTML += `<span class="filler">${emagines.length-8}+</span>`;
         break;
-      }else if(emagines === 9 && j === 9) {
-        imagesDiv.innerHTML += `<img class="hideThese" src="${emagines[j]}">`;
       }else{
         imagesDiv.innerHTML += `<img class="hideThese" src="${emagines[j]}">`;
       }
