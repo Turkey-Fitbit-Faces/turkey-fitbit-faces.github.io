@@ -164,7 +164,7 @@ function closeNav() {
   document.body.style.backgroundColor = "rgb(213, 226, 226)";
 }
 
-fetch('https://api.kiezelpay.com/api/merchant/productList?key=e926a0a52544531e487b4166f760fa56')
+fetch('https://api.kiezelpay.com/api/merchant/productList?key=35dc0175bdc65f803a15cf4eba868134')
   .then(response => response.json())
   .then(dat => {
     data = dat.products;
